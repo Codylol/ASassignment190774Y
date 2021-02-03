@@ -11,7 +11,7 @@ namespace ASassignment190774Y
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lbl_display.Text = Request.QueryString["Comment"];
+            //lbl_display.Text = Request.QueryString["Comment"];  //with this line its still prone to xss scripting
         }
     }
 }

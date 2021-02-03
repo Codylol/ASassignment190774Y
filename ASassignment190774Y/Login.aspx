@@ -13,12 +13,12 @@
             height: 33px;
         }
     </style>
-    <script src ="https://www.google.com/recaptcha/api.js?render=1"></script> <%--site key--%>
+    <script src ="https://www.google.com/recaptcha/api.js?render=2"></script> <%--site key--%>
 </head>
 <body>
     <script>
      grecaptcha.ready(function () {
-         grecaptcha.execute('1', { action: 'Login' }).then(function (token) { //site key
+         grecaptcha.execute('2', { action: 'Login' }).then(function (token) { //site key
         document.getElementById("g-recaptcha-response").value = token;
         });
      });
